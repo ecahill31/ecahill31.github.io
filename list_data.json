@@ -1,28 +1,28 @@
 {
 	"favoritefoods": [{
-		"Cuisine": "Automatically Generating Cause-and_Effect Questions from Passages",
-		"Dish": "Stasaski, K., Rathod, M., Tu, T., Xiao, Y, and Hearst, M.A.",
-		"Rating": "BEA Workshop"
+		"Cuisine": "Thai",
+		"Dish": "Pad See Ew",
+		"Review": "5/5 unless too oily"
 	},
 	{
-		"Cuisine": "Automatically Generating Cause-and_Effect Questions from Passages",
-		"Dish": "Stasaski, K., Rathod, M., Tu, T., Xiao, Y, and Hearst, M.A.",
-		"Rating": "BEA Workshop"
+		"Cuisine": "Italian",
+		"Dish": "Carbonara",
+		"Review": "5/5, can be salty"
 	},
 	{
-		"Cuisine": "Automatically Generating Cause-and_Effect Questions from Passages",
-		"Dish": "Stasaski, K., Rathod, M., Tu, T., Xiao, Y, and Hearst, M.A.",
-		"Rating": "BEA Workshop"
+		"Cuisine": "Chinese",
+		"Dish": "Dumplings",
+		"Review": "5/5, always hits the spot"
 	},
 	{
-		"Cuisine": "Automatically Generating Cause-and_Effect Questions from Passages",
-		"Dish": "Stasaski, K., Rathod, M., Tu, T., Xiao, Y, and Hearst, M.A.",
-		"Rating": "BEA Workshop"
+		"Cuisine": "Indian",
+		"Dish": "Saag paneer",
+		"Review": "5/5, hits all the foods I crave while making me feel healthy even if it's not"
 	},
 	{
-		"Cuisine": "Automatically Generating Cause-and_Effect Questions from Passages",
-		"Dish": "Stasaski, K., Rathod, M., Tu, T., Xiao, Y, and Hearst, M.A.",
-		"Rating": "BEA Workshop"
+		"Cuisine": "Jamaican",
+		"Dish": "Jerk chicken",
+		"Review": "5/5, the spice is addicting"
 	}
 ]
 	
