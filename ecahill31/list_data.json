@@ -1,0 +1,29 @@
+{
+	"favoritefoods": [{
+		"Cuisine": "Thai",
+		"Dish": "Pad See Ew",
+		"Review": "5/5 unless too oily"
+	},
+	{
+		"Cuisine": "Italian",
+		"Dish": "Carbonara",
+		"Review": "5/5, can be salty"
+	},
+	{
+		"Cuisine": "Chinese",
+		"Dish": "Dumplings",
+		"Review": "5/5, always hits the spot"
+	},
+	{
+		"Cuisine": "Indian",
+		"Dish": "Saag paneer",
+		"Review": "5/5, hits all the foods I crave while making me feel healthy even if it's not"
+	},
+	{
+		"Cuisine": "Jamaican",
+		"Dish": "Jerk chicken",
+		"Review": "5/5, the spice is addicting"
+	}
+]
+	
+}
