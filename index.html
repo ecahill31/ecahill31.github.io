@@ -55,18 +55,27 @@
     </div>
 <br>
     <div class="col">
-        <p style="text-align: left;">Let's explore what the tech sector is like for different age groups</p>
+        <p style="text-align: left;">Explore what the tech sector is like for their age group</p>
     </div>
 
-    <div id="observablehq-chart-0d4c44b6"></div>    
+    <div id="observablehq-chart-9c82b73b"></div>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
     <script type="module">
     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
     import define from "https://api.observablehq.com/d/f80574acf6902a1b.js?v=3";
     new Runtime().module(define, name => {
-      if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-0d4c44b6"));
+      if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-9c82b73b"));
+      return ["tooltip_2"].includes(name);
     });
     </script>
+
+<br>
+<br>
+<div class="col">
+    <p style="text-align: left;">Ageism can also lead to challenges in career advancement and job security for older workers, as they may be perceived as less valuable to the company compared to younger employees. They make up a significant portion of the workforce!</p>
+</div>
+
 
 <img id="image1" src="ageismimage1.svg" alt="Ageism visual with statistic on it" width="1000" height="800">
 
@@ -74,8 +83,13 @@
 <br>
   
   <div class="col">
-    <p style="text-align: left;">Baby boomers show a steep decline in number of manager positions with increasing age</p>
+    <p style="text-align: left;">Baby boomers show a steep decline in number of manager positions with increasing age. This decline in the number of manager positions held by baby boomers as they age is a clear sign of ageism in the workplace. It's not just limited to the tech sector; studies have shown that older workers in general, regardless of industry, face challenges when it comes to advancing in their careers.
+
+    </p>
+    <br>
+    <h3>What statistics can you find from these charts about your parent/legal guardian?</h3>
     </div>
+    <br>
 
     <div class="row charts">
         <div class="col" style="display: flex; justify-content: left;">
@@ -89,34 +103,19 @@
     </div>
 <br>
 <br>
-    <div class="col">
-        <p style="text-align: left;">What statistics about data scientists and tech professionals can you find about your parent/legal age group?</p>
-    </div>
-    <div class="row charts">
-        <div class="col" style="display: flex; justify-content: left;">
-            <tableau-viz id="tableauViz"
-                src='https://public.tableau.com/views/UsabilityTest2-UnemploymentRate/Dashboard2?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link'
-                device="desktop"
-                height="600px"
-                width="1000px">
-            </tableau-viz>
-        </div>
-    </div>
-<br>
-<br>
 
 
     <div class="col">
-        <h2>On LinkedIn, they find <strong>221,450</strong> Data Scientist jobs.</h2>
+        <h2>Now imagine, on LinkedIn, they find <strong>221,450</strong> Data Scientist jobs.</h2>
     </div>
 
     <div class="row charts">
-
-        <div class="col-6">
-            <p style="text-align: left;">Looking through these is not only overwhelming, but they sometimes think that they aren't the "ideal" candidate.</p>
-        </div>
-        <div class="col-6">
-            <p style="text-align: left;">Let's look at whether the terms they see are age-unfriendly or age-neutral terms.</p>
+<br>
+        <div class="col">
+            <p style="text-align: left;">There can be age bias in what's considered the "ideal" candidate. Ageism can show up in job descriptions when they use certain terms or phrasing that signal a preference for younger candidates. For example, words like "digital native," "recent graduate," or "entry-level" can imply a preference for candidates who are just starting their career, even if they have equivalent skills and experience to more seasoned candidates. Similarly, job ads that emphasize "fast-paced environments," "high-energy," or "ability to work long hours" may discourage older candidates who may have caregiving responsibilities or value work-life balance differently.</p> 
+            <p>Let's look at some the terms found in job descriptions.</p>
+<br>
+            <h3 style="text-align: left;">Do you think these are age-unfriendly or age-neutral terms?</h3>
             <button id="run-animation" style="background-color: white; color: white; font-size: 0px; padding: 0px; border: none; border-radius: 0px;">Run Animation</button>
         </div> 
     </div>
@@ -245,10 +244,11 @@
     <div class="col">
         <br>
 
-        <h2>They made it to the interview stage! They start telling you some of the questions they were asked.</h2>
+        <h2>Imagine they made it to the interview stage! They start telling you some of the questions they were asked.</h2>
         <br>
         <br>
-
+        <p>Ageism can also manifest itself in the interviewing stage, where older candidates may face discrimination based on assumptions about their technological proficiency or their ability to adapt to new work environments. For example, an interviewer may ask a question like "How comfortable are you using new technologies?" assuming that older candidates may not be as familiar with the latest tools and software. This assumption is not only unfair, but it can also prevent qualified candidates from getting hired, regardless of their skills and experience. In addition, older candidates may also face bias in terms of cultural fit, as some companies may prioritize younger candidates who they believe fit better with the company's culture or values. It is important for interviewers to be aware of these biases and to evaluate candidates based on their skills and qualifications, rather than their age.</p>
+        <br>
         <h3>Do you think they are being discriminated against with these questions?</h3>
         <br>
         
@@ -284,7 +284,8 @@
     <div class="col">
         <h2>You start to wonder if there are substantial differences between those 50+ and under 50 in the workplace.</h2>
         <br>
-        <p>Let's look at the most commonly used tools in data science and machine learning:</p>
+        <p>The tech industry has been particularly criticized for its youth-centric culture, which often prizes the qualities of younger workers such as creativity and adaptability over the experience and institutional knowledge that older workers can bring. This is particularly striking when you consider that the tech industry is often touted as a meritocracy that values skills and experience above all else.</p>
+        <p>Let's look at the most commonly used tools in data science and machine learning.</p>
         <br>
     </div>
 
@@ -363,8 +364,9 @@
 <br>
 
 <div class="row">
+    <h3>Do you see a substantial difference between the age groups?</h3>
+    <br>
     <h3>Percentage of people in each age group that use the top 7 tools</h3>
-    <p>Do you see a substantial difference between the age groups?</p>
 </div>
 <br>
     <div id="observablehq-chartInnerGlow-f9e8ff06"></div>
@@ -382,6 +384,8 @@
 <div class="col">
 
     <h1>Ageism is a problem that needs to be tackled. </h1>
+    <p>Ultimately, the goal is to create a tech industry that values workers of all ages and backgrounds, and that recognizes the contributions that older workers can make to the field. By breaking down stereotypes and fostering a more inclusive culture, we can help to ensure that the tech sector is a place where everyone can thrive, regardless of their age.
+    </p>
     <img id="slideshow" src="ageismimage1.svg" alt="Ageism visual with statistic on it" width="800" height="600">
   
     <script>
@@ -394,6 +398,10 @@
       }, 5000);
     </script>
     
+    <p>One way to combat ageism in the tech industry is to focus on creating a more diverse and inclusive workplace culture that values people of all ages, backgrounds, and experiences. This can include mentoring programs, training and development opportunities, and flexible work arrangements that support employees at different stages of their careers.
+Another approach is to raise awareness about ageism and its impact on workers, and to encourage companies to adopt more inclusive hiring practices that prioritize skills and experience over age. This can involve working with industry groups, policymakers, and other stakeholders to promote best practices and advocate for change.
+    </p>
+    <br>
     <h2>Here are some resources on how to handle ageism:</h2>
     <br>
     <p><a href="https://www.helpguide.org/articles/aging-issues/ageism-and-age-discrimination.htm](https://www.helpguide.org/articles/aging-issues/ageism-and-age-discrimination.htm)">Ageism and Age Discrimination</a></p>
