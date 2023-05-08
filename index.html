@@ -45,7 +45,7 @@
         <br>
         <br>
         <h1>Navigating ageism in the tech sector</h1>
-        <img src="ageismimage1.svg" alt="Ageism visual with statistic on it">
+        <br>
     </div>
 <br>
     <div class="row justify-content-left">
@@ -364,8 +364,20 @@
 <br>
 <br>
 <div class="col">
+
     <h1>Ageism is a problem that needs to be tackled. </h1>
-    <br>
+    <img id="slideshow" src="ageismimage1.svg" alt="Ageism visual with statistic on it" width="800" height="600">
+  
+    <script>
+      const images = ["ageismimage1.svg", "ageismimage2.svg", "ageismimage3.svg"];
+      let index = 0;
+      
+      setInterval(() => {
+        index = (index + 1) % images.length;
+        document.getElementById("slideshow").src = images[index];
+      }, 5000);
+    </script>
+    
     <h2>Here are some resources on how to handle ageism:</h2>
     <br>
     <p><a href="https://www.helpguide.org/articles/aging-issues/ageism-and-age-discrimination.htm](https://www.helpguide.org/articles/aging-issues/ageism-and-age-discrimination.htm)">Ageism and Age Discrimination</a></p>
