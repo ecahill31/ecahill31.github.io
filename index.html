@@ -1,45 +1,381 @@
-<!DOCTYPE HTML>  
-<html>  
-    <header>
-        <link rel="stylesheet" href="style3.css">
-        <link rel="stylesheet" href="table_style.css">
-        <title>My Intro</title>
-    </header>
-    <body>  
-        <!---Navigation--->
-        <!--This section of code defines the navigation bar at the top of the page.  The classes used here are defined in the style.css file.-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <!--This code defines the "My Webpage" link in the top left corner of the navigation pane-->
-                <a class="navbar-brand" href="./index.html">Eileen Cahill's Website</a>
-                <!--This code defines the "List" link in the top right corner of the navigation pane-->
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="./list.html">List</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!--This section defines the middle section of the webpage-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                
-                <!-- This code is for the student name-->
-                <h1 class="masthead-heading text-uppercase mb-0">Eileen Cahill</h1>
-                <!--This code creates the two lines separating the student name from the subtitle-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!--This code creates the subheading underneath the line dividers-->
-                <p class="masthead-subheading font-weight-light mb-0">School of Information Student</p>
-            </div>
-        </header>
-        <center>
-            <br /><br />
-            <div class="col-md-6 col-lg-4 mb-5">
-                <!-- put your bio paragraph here; remember to use the correct html tags -->
-                <body>I'm a first year MIMS '23 student interested in human-centered design in the health space. I have a background in biology and art and am looking forward to bridging my experience with my interest in information.</body>
-            </div>
-        </center>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ageism in Tech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link rel="stylesheet" href="age.css">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin-left:5em;
+            margin-right:5em;
+        }
+    /*    p { 
+            margin-left:5em; 
+            margin-right:5em;
+       } */
+        .btn-green {
+            background-color: #98d0a7;
+            color: #fff;
+        }
 
+        .btn-dark-green {
+            background-color: #417d5a;
+            color: #fff;
+        }
+        .btn-green:hover {
+            background-color: #8cccb9;
+        }
+        .btn-dark-green:hover {
+            background-color: #305b46;
+        }
+
+    </style>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+
+
+<body>
+    <div style="text-align:left;color:rgb(0, 151, 100)">
+        <br>
+        <br>
+        <h1>Navigating ageism in the tech sector</h1>
+        <img src="ageismimage1.svg" alt="Ageism visual with statistic on it">
+    </div>
+<br>
+    <div class="row justify-content-left">
+        <div class="col">
+            <h2>Imagine one of your parents or legal guardians, a skilled data scientist, is looking for a new job.</h2>
+        </div>
+    </div>
+<br>
+    <div class="col">
+        <p style="text-align: left;">Let's explore what the tech sector is like for different age groups</p>
+    </div>
+
+    <div id="observablehq-chart-0d4c44b6"></div>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/f80574acf6902a1b.js?v=3";
+    new Runtime().module(define, name => {
+      if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-0d4c44b6"));
+    });
+    </script>
+
+<br>
+<br>
+  
+  <div class="col">
+    <p style="text-align: left;">Baby boomers show a steep decline in number of manager positions with increasing age</p>
+    </div>
+
+    <div class="row charts">
+        <div class="col" style="display: flex; justify-content: left;">
+            <tableau-viz id="tableauViz"
+                src='https://public.tableau.com/views/UsabilityTest1-Managerworkforcecomposition/Sheet1?:language=en-US&:display_count=n&:origin=viz_share_link'
+                device="desktop"
+                height="600px"
+                width="1000px">
+            </tableau-viz>
+        </div>
+    </div>
+<br>
+<br>
+    <div class="col">
+        <p style="text-align: left;">What statistics about data scientists and tech professionals can you find about your parent/legal age group?</p>
+    </div>
+    <div class="row charts">
+        <div class="col" style="display: flex; justify-content: left;">
+            <tableau-viz id="tableauViz"
+                src='https://public.tableau.com/views/UsabilityTest2-UnemploymentRate/Dashboard2?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link'
+                device="desktop"
+                height="600px"
+                width="1000px">
+            </tableau-viz>
+        </div>
+    </div>
+<br>
+<br>
+
+    <div class="col">
+        <h2>On LinkedIn, they find <strong>221,450</strong> Data Scientist jobs.</h2>
+    </div>
+
+    <div class="row charts">
+
+        <div class="col-6">
+            <p style="text-align: left;">Looking through these is not only overwhelming, but they sometimes think that they aren't the "ideal" candidate.</p>
+        </div>
+        <div class="col-6">
+            <p style="text-align: left;">Let's look at whether the terms they see are age-unfriendly or age-neutral terms.</p>
+        </div> 
+    </div>
+
+    <div class="row charts">
+        <p>Mouse over the space below this text and then move the mouse to the far right of your screen</p>
+        <div class="col" style="display: flex; justify-content: center;">
+            <script>
+                const words = [
+                  { text: "Enthusiastic", category: "non-ageist" },
+                  { text: "Dedicated", category: "non-ageist" },
+                  { text: "Dependable", category: "non-ageist" },
+                  { text: "Careful", category: "non-ageist" },
+                  { text: "Friendly", category: "non-ageist" },
+                  { text: "Benevolent", category: "non-ageist" },
+                  { text: "Work ethic", category: "non-ageist" },
+                  { text: "Hard-working", category: "non-ageist" },
+                  { text: "Communication", category: "non-ageist" },
+                  { text: "Active", category: "ageist" },
+                  { text: "Energetic", category: "ageist" },
+                  { text: "High-Performer", category: "ageist" },
+                  { text: "Fun", category: "ageist" },
+                  { text: "Tech-savvy", category: "ageist" },
+                  { text: "Fast learner", category: "ageist" },
+                  { text: "Recent college graduate", category: "ageist" },
+                  { text: "Youthful", category: "ageist" },
+                  { text: "GPA", category: "ageist" }
+                  ];
+                
+                  
+                  const ageist = words.filter(d => d.category === "ageist");
+                  const lenghtofageist = ageist.length; 
+                  
+                  // Define the SVG dimensions
+                  const width = 600;
+                  const height = 400;
+                  
+                  // Define the color scale for ageist and non-ageist words
+                  const color = d3.scaleOrdinal()
+                    .domain(["ageist", "non-ageist"])
+                    .range(["#6c8bbd", "#c37e7e"]);
+                  
+                  // Create the SVG element
+                  const svg = d3.create("svg")
+                    .attr("width", width)
+                    .attr("height", height)
+                .on("mouseover", function() {
+                
+                  // Create a group element for the word labels
+                  const labelGroup = svg.append("g")
+                    .attr("class", "labels");
+                  
+                  // Add the word labels to the group with random X and Y positions
+                  const labels = labelGroup.selectAll("text")
+                    .data(words)
+                    .enter().append("text")
+                    .text(d => d.text)
+                    .attr("x", d => Math.random() * width)
+                    .attr("y", d => Math.random() * height)
+                    .style("font-family", "Helvetica")
+                    .style("font-size", "16px");
+                  
+                  // Create a transition to move the words to their final positions
+                  const transition = svg.transition()
+                    .duration(6000);
+                  
+                  // Animation: Moving words to each side
+                  transition.selectAll("text")
+                    .attr("x", d => d.category === "ageist" ? width / 6 : 3.5 * width / 6)
+                    .attr("y", function(d, i) {
+                      if (d.category === "ageist") {
+                      return i * 30 - 220;
+                    } else {
+                      return i * 30 + 50
+                  }
+                })
+                    .style("fill", d => color(d.category));
+                
+                  // Add the column labels with fade in animation
+                
+                  setTimeout(() => {
+                    svg.append("text")
+                      .text("Age Unfriendly Terms")
+                      .attr("x", 160)
+                      .attr("y", 20)
+                      .attr("text-anchor", "middle")
+                      .style("font-weight", "bold")
+                      .attr("opacity", 0)
+                      .transition()
+                      .duration(1000)
+                      .attr("opacity", 1);
+                    
+                    svg.append("text")
+                      .text("Age Neutral Terms")
+                      .attr("x", 400)
+                      .attr("y", 20)
+                      .attr("text-anchor", "middle")
+                      .style("font-weight", "bold")
+                      .attr("opacity", 0)
+                      .transition()
+                      .duration(1000)
+                      .attr("opacity", 1);
+                  }, 4500);
+                
+                }) // closing curly brace for the 'on' method's callback function
+                
+                
+                    document.body.appendChild(svg.node());
+                  </script>
+            </div>
+        </div>
+
+
+    <div class="col">
+        <br>
+
+        <h2>They made it to the interview stage! They start telling you some of the questions they were asked.</h2>
+        <br>
+        <br>
+
+        <h3>Do you think they are being discriminated against with these questions?</h3>
+        <br>
+        
+        <p style="display: inline-block; margin: 10px;">What is your energy level?</p>
+        <button type="button" class="btn btn-primary btn-green" onclick="setColor2(this)" style="width: 190px; float: right; margin-right: 10px">Not discriminatory</button>
+        <button type="button" class="btn btn-primary btn-green" onclick="setColor(this)" style="width: 150px; float: right;">Discriminatory</button>
+        <br>
+        <br>
+
+        <p style="display: inline-block; margin: 10px;">Are you okay with working for someone younger?</p>
+        <button type="button" class="btn btn-primary btn-green" onclick="setColor2(this)" style="width: 190px; float: right; margin-right: 10px">Not discriminatory</button>
+        <button type="button" class="btn btn-primary btn-green" onclick="setColor(this)" style="width: 150px; float: right;">Discriminatory</button>
+        <br>
+        <br>
+
+        <p style="display: inline-block; margin: 10px;">Have you kept your technology skills up to date?</p>
+        <button type="button" class="btn btn-primary btn-green" onclick="setColor2(this)" style="width: 190px; float: right; margin-right: 10px">Not discriminatory</button>
+        <button type="button" class="btn btn-primary btn-green" onclick="setColor(this)" style="width: 150px; float: right;">Discriminatory</button>
+        <br>
+        <br>
+
+        <p style="display: inline-block; margin: 10px;">When did you graduate college?</p>
+        <button type="button" class="btn btn-primary btn-green" onclick="setColor2(this)" style="width: 190px; float: right; margin-right: 10px">Not discriminatory</button>
+        <button type="button" class="btn btn-primary btn-green" onclick="setColor(this)" style="width: 150px; float: right;">Discriminatory</button>
+        <br>
+    
+        <br>
+    </div>
+    
+    <br>
+    <br>
+
+    <div class="col">
+        <h2>You start to wonder if there are substantial differences between those 50+ and under 50 in the workplace.</h2>
+        <br>
+        <p>Let's look at the most commonly used tools in data science and machine learning:</p>
+        <br>
+    </div>
+
+    <div class="row">
+        <h3>The top 10 coding tools used by all data scientists and machine learning engineers</h3>
+    </div>
+<br>
+
+    <div id="observablehq-Animation2-e556660a"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/fcf0bdf5b73f705b@411.js?v=3";
+    new Runtime().module(define, name => {
+    if (name === "Animation2") return new Inspector(document.querySelector("#observablehq-Animation2-e556660a"));
+    return ["tooltip"].includes(name);
+    });
+    </script>
+
+<br>
+<br>
+<div>
+    <h3>The average number of known data science and machine learning tools doesn't vary much by age group</h3>
+</div>
+
+    <div class="row charts">
+        <div class="col" style="display: flex; justify-content: left;">
+            <tableau-viz id="tableauViz"
+                src='https://public.tableau.com/views/final_agetech/2-Numberoftoolsknown-IndividualAgeRanges2?:language=en-US&:display_count=n&:origin=viz_share_link'
+                device="desktop"
+                height="600px"
+                width="1000px">
+            </tableau-viz>
+        </div>
+    </div>
+
+<br>
+
+
+	<script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.4.0.js">
+	</script>
+
+    <script>
+        var count = 1;
+
+        function setColor(btn) {
+            if (count == 0) {
+                btn.classList.remove("btn-dark-green");
+                btn.classList.add("btn-green");
+                btn.innerHTML = "Discriminatory";
+                count = 1;
+            } else {
+                btn.classList.remove("btn-green");
+                btn.classList.add("btn-dark-green");
+                btn.innerHTML = "Discriminatory";
+                count = 0;
+            }
+        }
+
+        function setColor2(btn) {
+            if (count == 0) {
+                btn.classList.remove("btn-dark-green");
+                btn.classList.add("btn-green");
+                btn.innerHTML = "Not discriminatory";
+                count = 1;
+            } else {
+                btn.classList.remove("btn-green");
+                btn.classList.add("btn-dark-green");
+                btn.innerHTML = "Not discriminatory";
+                count = 0;
+            }
+        }
+    </script>
+
+<br>
+<br>
+
+<div class="row">
+    <h3>Percentage of people in each age group that use the top 7 tools</h3>
+    <p>Do you see a substantial difference between the age groups?</p>
+</div>
+<br>
+    <div id="observablehq-chartInnerGlow-f9e8ff06"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/7ee6bca1b7c1ad27@402.js?v=3";
+    new Runtime().module(define, name => {
+    if (name === "chartInnerGlow") return new Inspector(document.querySelector("#observablehq-chartInnerGlow-f9e8ff06"));
+    });
+    </script>
+
+<br>
+<br>
+<div class="col">
+    <h1>Ageism is a problem that needs to be tackled. </h1>
+    <br>
+    <h2>Here are some resources on how to handle ageism:</h2>
+    <br>
+    <p><a href="https://www.helpguide.org/articles/aging-issues/ageism-and-age-discrimination.htm](https://www.helpguide.org/articles/aging-issues/ageism-and-age-discrimination.htm)">Ageism and Age Discrimination</a></p>
+    <p><a href="https://www.everydayhealth.com/longevity/emotional-wellness/fighting-age-discrimination.aspx](https://www.everydayhealth.com/longevity/emotional-wellness/fighting-age-discrimination.aspx)">7 Ways to Overcome Ageism</a></p>
+    <p><a href="https://www.bls.gov/opub/mlr/2020/beyond-bls/what-to-do-about-our-aging-workforce-the-employers-response.htm](https://www.bls.gov/opub/mlr/2020/beyond-bls/what-to-do-about-our-aging-workforce-the-employers-response.htm)">What to do about our aging workforce—the employers’ response</a></p>
+    <p><a href="https://www.forbes.com/sites/forbescoachescouncil/2018/10/25/14-smart-strategies-to-prepare-your-company-for-an-aging-workforce/?sh=580e60da6a94](https://www.forbes.com/sites/forbescoachescouncil/2018/10/25/14-smart-strategies-to-prepare-your-company-for-an-aging-workforce/?sh=580e60da6a94)">14 Smart Strategies To Prepare Your Company For An Aging Workforce</a></p>
+</div>
+<br>
+<br>
+  
+
+</body>
 </html>
